@@ -22,3 +22,11 @@ app.listen(port, function onStart(err) {
     }
     console.info('Server started on port %s.', port)
 })
+
+import { MongoClient } from 'mongodb'
+const url = procces.env.MONGODB_URI || 
+    'mongodb://localhost:27017/mernSimpleSetup'
+    MongoClient.connect(url, (err, db) => {
+        console.log("Connected successfully to mongodb server")
+        db.close ()
+    })
