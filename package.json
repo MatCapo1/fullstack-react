@@ -23,5 +23,10 @@
     "webpack-hot-middleware": "^2.25.1",
     "webpack-node-externals": "^3.0.0"
   },
-  "repository": "https://github.com/MatCapo1/mern-simplesetup.git"
+  "repository": "https://github.com/MatCapo1/mern-simplesetup.git",
+  "scripts": {
+    "development": "nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  }
 }
