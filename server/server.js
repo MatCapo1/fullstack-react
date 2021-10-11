@@ -3,6 +3,7 @@ import devBundle from './devBundle'
 import path from 'path'
 import template from './../template'
 import { MongoClient } from 'mongodb'
+require('dotenv').config()
 
 const app = express()
 devBundle.compile(app)
