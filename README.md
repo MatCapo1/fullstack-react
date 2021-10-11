@@ -1,2 +1,2 @@
 # mern-simplesetup
-Repositorio para practicar React con proyectos
+Repositorio con Setup Inicial de MERN Stack (Mongo - Express - React - Node)
